@@ -1,15 +1,16 @@
 // Ukol1.cpp : Tento soubor obsahuje funkci main. Provádìní programu se tam zahajuje a ukonèuje.
 //
-
 #include <iostream>
 using namespace std;
 
 // ----------------------------------------------------------------
 // Domaci ukol:
+// TODO: Dodelat v komentarich u vsech funkci "Casovou Slozitost"
 
 class CislaOperace
 {
-	int faktorialNerek(int n)
+public:
+	int faktorialNerek(int n) // volani metody 3 +1{int n;} = 1 [+3] = 4 
 	{
 		int x = 1;
 		for (int i = 1; i <= n; i++) {
@@ -21,27 +22,55 @@ class CislaOperace
 
 	int mocninaR(int c, int m)
 	{
-		// todo du
-		return -1;
+		if (m != 0) {
+			return (c * mocninaR(c, m - 1)); 
+		}
+		else {
+			return 1;
+		}
 	}
 
 	int mocninaNerek(int c, int m)
 	{
-		// todo du
-		return -1;
+		int result = 1;
+		for (int i = 0; i < m; i++) {
+			result *= c;
+
+		}
+		return result;
 	}
 
 	int zjistiPocetKladnych(int* hodnoty, int n)
 	{
-		// todo du
-		return -1;
+		int pk = 0;
+		for (int i = 0; i < n; i++) {
+			if (hodnoty[i] > 0) {
+				pk++;
+			}
+		}
+		return pk;
 	}
 };
 
 int main()
 {
-	z =
-	cout << CislaOperace.faktorialNerek(4) << endl;
+	CislaOperace fakNer; // Crate an object of my class
+	int vypocet1 = fakNer.faktorialNerek(4);
+	cout << vypocet1 << endl;
+
+	CislaOperace mocR;
+	int vypocet2 = mocR.mocninaR(5, 3);
+	cout << vypocet2 << endl;
+
+	CislaOperace mocNer;
+	int vypocet3 = mocNer.mocninaNerek(5, 3);
+	cout << vypocet3 << endl;
+
+	CislaOperace zpKlad;
+	int pole[6] = { -1, 0, 1, 2, -3, 7 };
+	int vypocet4 = zpKlad.zjistiPocetKladnych(pole, 6);
+	cout << vypocet4 << endl;
+
 }
 
 // Spuštìní programu: Ctrl+F5 nebo nabídka Ladit > Spustit bez ladìní
