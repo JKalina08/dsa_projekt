@@ -21,7 +21,11 @@ public:
 	}
 
 	int mocninaR(int c, int m)
-	{
+	{ //casova slozitost je linearni:
+		//volani metody +3
+		//telo metody +1
+		//rekurzivni volani +3
+		//CELKEM: 4+m*(3+1)
 		if (m != 0) {
 			return (c * mocninaR(c, m - 1)); 
 		}
@@ -31,7 +35,12 @@ public:
 	}
 
 	int mocninaNerek(int c, int m)
-	{
+	{ //casova slozitost je linearni:
+		//volani metody +3
+		//telo metody +1
+		//for cyklus m*1
+		//CELKEM: (4+m)
+
 		int result = 1;
 		for (int i = 0; i < m; i++) {
 			result *= c;
@@ -41,7 +50,12 @@ public:
 	}
 
 	int zjistiPocetKladnych(int* hodnoty, int n)
-	{
+	{ //casova slozitost je linearni:
+		//volani metody +3
+		//telo metody +1
+		//for cyklus m*2
+		//CELKEM: (4+2m)
+
 		int pk = 0;
 		for (int i = 0; i < n; i++) {
 			if (hodnoty[i] > 0) {
@@ -54,21 +68,23 @@ public:
 
 int main()
 {
-	CislaOperace fakNer; // Crate an object of my class
-	int vypocet1 = fakNer.faktorialNerek(4);
+	float a, b, c;
+	a = 4;
+	b = 5;
+	c = 3;
+	CislaOperace cislaOperace;
+
+	int vypocet1 = cislaOperace.faktorialNerek(a);
 	cout << vypocet1 << endl;
 
-	CislaOperace mocR;
-	int vypocet2 = mocR.mocninaR(5, 3);
+	int vypocet2 = cislaOperace.mocninaR(b, c);
 	cout << vypocet2 << endl;
 
-	CislaOperace mocNer;
-	int vypocet3 = mocNer.mocninaNerek(5, 3);
+	int vypocet3 = cislaOperace.mocninaNerek(b, c);
 	cout << vypocet3 << endl;
 
-	CislaOperace zpKlad;
 	int pole[6] = { -1, 0, 1, 2, -3, 7 };
-	int vypocet4 = zpKlad.zjistiPocetKladnych(pole, 6);
+	int vypocet4 = cislaOperace.zjistiPocetKladnych(pole, 6);
 	cout << vypocet4 << endl;
 
 }
