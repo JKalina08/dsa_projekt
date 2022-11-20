@@ -15,21 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\_temp\ukol_3\ukol_3\App_Pole2D.cpp">
+    <ClCompile Include="App_Pole2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\_temp\ukol_3\ukol_3\Pole2D.h">
+    <ClInclude Include="Pole2Duk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\_temp\ukol_3\ukol_3\Pole2D_2.h">
+    <ClInclude Include="Pole2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\_temp\ukol_3\ukol_3\Pole2Duk.h">
+    <ClInclude Include="Pole2Duk_2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\_temp\ukol_3\ukol_3\Pole2Duk_2.h">
+    <ClInclude Include="Pole2D_2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

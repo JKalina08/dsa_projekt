@@ -10,60 +10,49 @@ using namespace std;
 class CislaOperace
 {
 public:
-	int faktorialNerek(int n) // volani metody 3 +1{int n;} = 1 [+3] = 4 
+	int faktorialNerek(int n)			// Volani metody +3 
 	{
-		int x = 1;
-		for (int i = 1; i <= n; i++) {
-			x *= i;
+		int x = 1;						// +1
+		for (int i = 1; i <= n; i++) {	// +1; N; N-1;
+			x *= i;						// N-1				
 
 		}
-		return x;
-	}
+		return x;						
+	} // Celkem: 5+3N-2 = 3+3N (linearni)
 
-	int mocninaR(int c, int m)
-	{ //casova slozitost je linearni:
-		//volani metody +3
-		//telo metody +1
-		//rekurzivni volani +3
-		//CELKEM: 4+m*(3+1)
-		if (m != 0) {
-			return (c * mocninaR(c, m - 1)); 
+
+	int mocninaR(int c, int m)			// Volani metody +3 
+	{
+		if (m != 0) {					// (N-1)
+			return (c * mocninaR(c, m - 1)); // (N-1)*3
 		}
 		else {
-			return 1;
+			return 1;					// +1
 		}
-	}
+	} // Celkem: 3+N-1+3N-3+1 = 4N (linearni)
 
-	int mocninaNerek(int c, int m)
-	{ //casova slozitost je linearni:
-		//volani metody +3
-		//telo metody +1
-		//for cyklus m*1
-		//CELKEM: (4+m)
 
-		int result = 1;
-		for (int i = 0; i < m; i++) {
-			result *= c;
+	int mocninaNerek(int c, int m)			// Volani metody +3 
+	{ 
+		int result = 1;						// +1
+		for (int i = 0; i < m; i++) {		// +1; N; N-1;
+			result *= c;					// N-1
 
 		}
 		return result;
-	}
+	} // Celkem: 5+3N-2 = 3+3N (linearni)
 
-	int zjistiPocetKladnych(int* hodnoty, int n)
-	{ //casova slozitost je linearni:
-		//volani metody +3
-		//telo metody +1
-		//for cyklus m*2
-		//CELKEM: (4+2m)
 
-		int pk = 0;
-		for (int i = 0; i < n; i++) {
-			if (hodnoty[i] > 0) {
-				pk++;
+	int zjistiPocetKladnych(int* hodnoty, int n)	// Volani metody +3 
+	{
+		int pk = 0;									// +1
+		for (int i = 0; i < n; i++) {				// +1; N; N-1;
+			if (hodnoty[i] > 0) {					// N
+				pk++;								// N-1
 			}
 		}
 		return pk;
-	}
+	} // Celkem: 5+4N-2 = 3+4N (linearni)
 };
 
 int main()
