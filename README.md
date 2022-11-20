@@ -2,7 +2,7 @@
 
 ### Úkol č.1
 - [x] Operace s čísly `CislaOperace.cpp`
-- [ ] Odevzdejte soubory
+- [x] Odevzdejte soubory (Neděle, 20. listopad 2022, 20.18 ..Zbývá 15 hodin 40 min.) :ok:
 ### Úkol č.2
 __1.__ V modulu `SeznamInt_1` (projektu App_Pole1D)  
 - [x] __(a)__ Doplňte implementaci metody `.Copy`, která má za úkol vytvořit kopii pole hodnot a vrátit vytvořenou kopii návratovou hodnotou. Otestujte metody na klíčových případech.
@@ -10,7 +10,7 @@ __1.__ V modulu `SeznamInt_1` (projektu App_Pole1D)
 o vložení další hodnoty se stávající pole realokovalo.
 
  - [x] Otestujte metody na klíčových případech, v `App_Pole1D.cpp`.
- - [ ] Odevzdejte soubory projektu: `SeznamInt_1.cpp`, `SeznamInt_1.h`, `App_Pole1D.cpp`. 
+ - [x] Odevzdejte soubory projektu: `SeznamInt_1.cpp`, `SeznamInt_1.h`, `App_Pole1D.cpp`. (Neděle, 20. listopad 2022, 20.18 ..Zbývá 15 hodin 40 min.) :ok:
 
 __2.__ V modulu `SeznamInt_2` (projektu `App_Pole1D`)
 Upravte třídu `SeznamInt_2` tak, aby pracovala s pole ukazatelů na hodnotu. 
@@ -24,17 +24,19 @@ alokovaného místa. Hodnota `NULL` prvku bude znamenat, že na dané pozici nen
 
 
 #### Požadavek na odevzdání:
-- [ ] soubory `SeznamInt_1.cpp, SeznamInt_1.h, SeznamInt_2.h, SeznamInt_2.cpp, App_Pole1D.cpp`
-- [ ] zkomprimovano do `ukol2.zip` (tak aby po dekomprimaci byly v zadaném umístění tyto soubory 
+- [x] soubory `SeznamInt_1.cpp, SeznamInt_1.h, SeznamInt_2.h, SeznamInt_2.cpp, App_Pole1D.cpp`
+- [x] zkomprimovano do `ukol2.zip` (tak aby po dekomprimaci byly v zadaném umístění tyto soubory 
 a nikoliv složka s těmito soubory).
+- [x] Odevzdáno (Neděle, 20. listopad 2022, 20.19 ..Zbývá 15 hodin 41 min.) :ok:
+
 ### Úkol č.3
 V modulu `Pole2Duk` projektu `App_Pole2D`
-- [ ] a) Doplňte definice metod přetížení operátoru + (sčítání matic) a operátoru * (násobení matic), dále přidejte metodu operátoru == (porovnání matic). Funkčnost ověřte v hlavním programu. 
-    - :warning: Zatím nevíme jak na operatory .. `bool`
-- [ ] b) Doplňte definici metody realokace matice vzhledem k její realizaci v Pole2Duk. Funkčnost ověřte v hlavním programu. 
+- [x] a) Doplňte definice metod přetížení operátoru + (sčítání matic) a operátoru * (násobení matic), dále přidejte metodu operátoru == (porovnání matic). Funkčnost ověřte v hlavním programu. 
+- [x] b) Doplňte definici metody realokace matice vzhledem k její realizaci v Pole2Duk. Funkčnost ověřte v hlavním programu. 
 
 #### Požadavky na odevzdání: 
-- [ ] soubory `Pole2Duk.h`, `App_Pole2D.cpp`
-- [ ] zkomprimováno do `zip` jako `ukol3.zip` (tak aby po dekomprimaci byly v cílové složce umístěny soubory a nikoliv složka se soubory).
+- [x] soubory `Pole2Duk.h`, `App_Pole2D.cpp`
+- [x] zkomprimováno do `zip` jako `ukol3.zip` (tak aby po dekomprimaci byly v cílové složce umístěny soubory a nikoliv složka se soubory).
+- [x] Odevzdáno (Neděle, 20. listopad 2022, 20.19 ..Zbývá 15 hodin 40 min.) :ok:
 
 ### Úkol č.4

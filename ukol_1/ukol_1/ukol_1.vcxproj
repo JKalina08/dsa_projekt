@@ -139,7 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ukol1.cpp" />
+    <ClCompile Include="CislaOperace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CislaOperace.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
