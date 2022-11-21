@@ -40,3 +40,13 @@ V modulu `Pole2Duk` projektu `App_Pole2D`
 - [x] Odevzdáno (Neděle, 20. listopad 2022, 20.19 ..Zbývá 15 hodin 40 min.) :ok:
 
 ### Úkol č.4
+V modulu `LinekdList.cpp` (projektu DDS_LinkedList-reseni-1.zip), doplňte implementaci metod operací jednocestného spojovaného seznamu (todo1 du, todo2 du, todo3 du, todo4 du, todo5 du). 
+(!!) V implementacích úkolu todo4 du a todo5 du provádějte přepojení prvků seznamu, není povoleno kopírovat hodnoty prvků mezi prvky. Implementace metod ověřte použitím ve funkci Main.
+
+Požadavky na odevzdání:
+- [ ] soubor `LinkedList.cpp` a soubor DDS_LinkedList.cpp zkomprimované do archviu `task4.zip`
+
+## Závěrečný projekt
+Nákupní paragon s uspořádáním položek podle kategorie. Průběžné vytvářen paragonu vkládáním
+nové položky. (+ Kontrola nákupu povoleného množství. Viz.:
+[Moodle](https://moodle.vspj.cz/pluginfile.php/223973/mod_resource/content/2/2021-2022_SemestralniPrace.pdf)
