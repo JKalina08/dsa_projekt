@@ -1,52 +1,57 @@
-## DSA Úkoly a závěrečný projekt
-
-### Úkol č.1
-- [x] Operace s čísly `CislaOperace.cpp`
-- [x] Odevzdejte soubory (Neděle, 20. listopad 2022, 20.18 ..Zbývá 15 hodin 40 min.) :ok:
-### Úkol č.2
-__1.__ V modulu `SeznamInt_1` (projektu App_Pole1D)  
-- [x] __(a)__ Doplňte implementaci metody `.Copy`, která má za úkol vytvořit kopii pole hodnot a vrátit vytvořenou kopii návratovou hodnotou. Otestujte metody na klíčových případech.
-- [x] __(b)__ Metoda `.Add` nyní kontroluje zaplnění pole a neumožní vložit další hodnotu, pokud je pole naplněné. Doplňte definici metody realokace pro realokaci pole. Upravte (Rozšiřte) metodu `.Add` tak, aby při naplněném poli a pokusu 
-o vložení další hodnoty se stávající pole realokovalo.
-
- - [x] Otestujte metody na klíčových případech, v `App_Pole1D.cpp`.
- - [x] Odevzdejte soubory projektu: `SeznamInt_1.cpp`, `SeznamInt_1.h`, `App_Pole1D.cpp`. (Neděle, 20. listopad 2022, 20.18 ..Zbývá 15 hodin 40 min.) :ok:
-
-__2.__ V modulu `SeznamInt_2` (projektu `App_Pole1D`)
-Upravte třídu `SeznamInt_2` tak, aby pracovala s pole ukazatelů na hodnotu. 
-Rozhraní objektu zůstate nezměněné - předává se hodnota, ale ta se zapíše do dynamicky 
-alokovaného místa. Hodnota `NULL` prvku bude znamenat, že na dané pozici není hodnota zapsána.  
-
-- [x] Co se musí provést při odstranění hodnoty? Proveďte. 
-
-- [x] Otestujte funkčnost třídy, v `App_Pole1D.cpp`. Odevzdejte soubory projektu 
-`SeznamInt_2.h`, `SeznamInt_2.cpp`, sdílený soubor `App_Pole1D.cpp` s předcházejícím úkolem. 
-
-
-#### Požadavek na odevzdání:
-- [x] soubory `SeznamInt_1.cpp, SeznamInt_1.h, SeznamInt_2.h, SeznamInt_2.cpp, App_Pole1D.cpp`
-- [x] zkomprimovano do `ukol2.zip` (tak aby po dekomprimaci byly v zadaném umístění tyto soubory 
-a nikoliv složka s těmito soubory).
-- [x] Odevzdáno (Neděle, 20. listopad 2022, 20.19 ..Zbývá 15 hodin 41 min.) :ok:
-
-### Úkol č.3
-V modulu `Pole2Duk` projektu `App_Pole2D`
-- [x] a) Doplňte definice metod přetížení operátoru + (sčítání matic) a operátoru * (násobení matic), dále přidejte metodu operátoru == (porovnání matic). Funkčnost ověřte v hlavním programu. 
-- [x] b) Doplňte definici metody realokace matice vzhledem k její realizaci v Pole2Duk. Funkčnost ověřte v hlavním programu. 
-
-#### Požadavky na odevzdání: 
-- [x] soubory `Pole2Duk.h`, `App_Pole2D.cpp`
-- [x] zkomprimováno do `zip` jako `ukol3.zip` (tak aby po dekomprimaci byly v cílové složce umístěny soubory a nikoliv složka se soubory).
-- [x] Odevzdáno (Neděle, 20. listopad 2022, 20.19 ..Zbývá 15 hodin 40 min.) :ok:
-
-### Úkol č.4
-V modulu `LinekdList.cpp` (projektu DDS_LinkedList-reseni-1.zip), doplňte implementaci metod operací jednocestného spojovaného seznamu (todo1 du, todo2 du, todo3 du, todo4 du, todo5 du). 
-(!!) V implementacích úkolu todo4 du a todo5 du provádějte přepojení prvků seznamu, není povoleno kopírovat hodnoty prvků mezi prvky. Implementace metod ověřte použitím ve funkci Main.
-
-Požadavky na odevzdání:
-- [ ] soubor `LinkedList.cpp` a soubor DDS_LinkedList.cpp zkomprimované do archviu `task4.zip`
+# DSA Úkoly a závěrečný projekt
 
 ## Závěrečný projekt
-Nákupní paragon s uspořádáním položek podle kategorie. Průběžné vytvářen paragonu vkládáním
-nové položky. (+ Kontrola nákupu povoleného množství. Viz.:
-[Moodle](https://moodle.vspj.cz/pluginfile.php/223973/mod_resource/content/2/2021-2022_SemestralniPrace.pdf)
+### Náležitosti práce - realizace
+- Projekt implementovaný v jazyce C++ v prostředí Visual Studia, plné využití principů OOP a znalostí získaných v předmětu DSA; okomentovaný kód, dekompozice kódu; kompilovatelný a spustitelný projekt; intuitivní a snadné ovládání aplikace v kooperaci s manuálem přiloženým k textové části.
+- V projektu je implementován reálný problém s využitím problematiky datových struktur a algoritmů.
+- Název projektu obsahuje identifkátor týmu a postfix _sp např. T01_sp.
+- V textovém dokumentu (formát .doc a .pdf) bude formulace zadání, analýza problému, možná řešení
+- Návrh zvoleného řešení, odůvodnění volby řešení a odůvodnění zvolených algoritmů, popis realizace, postup testování, zhodnocení výsledků; dále pak jednoduchý manuál k ovládání aplikace.
+- Textová část bude věcně zpracovávat kompletní návrh řešení zvoleného problému
+    - Logická interpretace
+    - Fyzická interpretace
+    - Vizualizace problému (formát uložení dat, vizualizovat aplikovaných algoritmů)
+    - Odůvodnění volby datové struktury a navrhovaných algoritmů
+    - Vyjádření složitosti
+    - Diskuze nad složitostí, výhodami a nevýhodami zvolených postupů 
+
+### Struktura dokumentu:
+- Ú vodní stránka
+- Automaticky generovaný obsah; využití obrázků, tabulek, grafů a to podle charakteru zvoleného tématu.
+- Úvodní stránka a celý dokument bude zpracován v náležitostech bakalářské práce (viz informační systém školy/soubory ke stažení), ale bez stránek týkajících se bp – prohlášení, podepsané zadání s hlavičkou školy, atp.
+- Úvodní strana obsahuje
+    - Název školy
+    - Logo školy
+    - Identifikátor týmu a seznam všech autorů konzistentní s evidovaným týmem (jméno a příjmení autora, e-mail, datum.
+- Odevzdává se celý projekt v komprimovaném formátu zip, součástí balíčku je i textová dokumentace.
+- Dále je přiložen soubor se vzorovými daty (složka export), který bude možné do aplikace naimportovat. 
+
+### Obecná specifikace semestrální práce:
+- Aplikace umožňuje hromadné zpracování data
+    - [ ] Export a import dat
+    - [ ] Implementace a použití vhodné datové struktury
+    - [ ] Implementace operací zařazení dat do seřazené posloupnosti či neseřazené posloupnosti
+    - [ ] Seřazení dat podle určeného kritéria – více možností řazení (volba uživatele vzestupně/sestupně), vyhledání dat a zobrazení dat (filtrace, výpis všech dat nebo dat splňující podmínku)
+    - [ ] Editace a odstranění záznamu.
+- [ ] Data jsou uložena ve vhodně navržené datové struktuře.
+- ~~Aplikace je ovladatelná pomocí menu~~
+### Téma č. 15 Nákupní paragon, viz.: [Moodle](https://moodle.vspj.cz/pluginfile.php/223973/mod_resource/content/2/2021-2022_SemestralniPrace.pdf)
+- [ ] Nákupní paragon s uspořádáním položek podle kategorie
+- [ ] Průběžné vytvářen paragonu vkládáním nové položky
+    - (+ Kontrola nákupu povoleného množství)
+
+## Úkoly
+- [Zadání ukolu č. 1](https://github.com/JKalina08/dsa_projekt/tree/main/ukol_1/zadani1.md)
+    - [x] Odevzdáno?
+- [Zadání ukolu č. 2](https://github.com/JKalina08/dsa_projekt/tree/main/ukol_2/zadani2.md)
+    - [x] Odevzdáno?
+- [Zadání ukolu č. 3](https://github.com/JKalina08/dsa_projekt/tree/main/ukol_3/zadani3.md)
+    - [x] Odevzdáno?
+- [Zadání ukolu č. 4](https://github.com/JKalina08/dsa_projekt/tree/main/ukol_4/zadani4.md) :exclamation: Podklady `*.sln` ještě nejsou kompletní, vyčkejte s prací
+    - [ ] Odevzdáno?
+- [Zadání ukolu č. 5](https://github.com/JKalina08/dsa_projekt/tree/main/ukol_5/zadani5.md) :exclamation: Podklady `*.sln` ještě nejsou kompletní, vyčkejte s prací
+    - [ ] Odevzdáno?
+- [Zadání ukolu č. 6](https://github.com/JKalina08/dsa_projekt/tree/main/ukol_6/zadani6.md) :exclamation: Podklady `*.sln` ještě nejsou kompletní, vyčkejte s prací
+    - [ ] Odevzdáno?
+- [Zadání ukolu č. 7](https://github.com/JKalina08/dsa_projekt/tree/main/ukol_7/zadani7.md) :exclamation: Podklady `*.sln` ještě nejsou kompletní, vyčkejte s prací
+    - [ ] Odevzdáno?
