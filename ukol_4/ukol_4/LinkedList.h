@@ -4,7 +4,7 @@ class ListNode
 {
 private:
 	int value;
-	ListNode* pNext;
+	ListNode *pNext;
 public:
 	ListNode(int value);
 
@@ -14,10 +14,10 @@ public:
 class MyList
 {
 private:
-	ListNode* pHead;
+	ListNode *pHead;
 
 private:
-	void TiskReverse(ListNode* pHead);
+	void TiskReverse(ListNode *pHead);
 
 public:
 	MyList();
@@ -27,7 +27,7 @@ public:
 	bool IsEmpty() const;
 
 	// vytvori seznam z hodnot ulozenych v poli p
-	void MakeList(int* p, int cnt);
+	void MakeList(int *p, int cnt);
 
 	// vytiskne seznam na standardni vystup
 	void Tisk() const;
@@ -45,10 +45,10 @@ public:
 	bool Contains(int value);
 
 	// otestuje, jestli existuje prvek s hodnotou value
-	bool Contains(ListNode* pNode);
+	bool Contains(ListNode *pNode);
 
 	// otestuje zacatek seznamu
-	bool Test_Begin(ListNode* pNode);
+	bool Test_Begin(ListNode *pNode);
 
 	// otestuje konec seznamu
 	bool Test_End(ListNode* pNode);

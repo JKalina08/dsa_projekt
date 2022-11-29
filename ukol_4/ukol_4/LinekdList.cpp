@@ -30,13 +30,13 @@ bool MyList::IsEmpty() const
 	return (pHead == NULL);
 }
 
-void MyList::MakeList(int* p, int cnt)
+void MyList::MakeList(int *p, int cnt)
 {
-	ListNode* pTmp, * pLast;
+	ListNode *pTmp, *pLast;
 	pLast = pHead;
-	for (int i = 0; i < cnt; i++)
+	for(int i = 0; i < cnt; i++)
 	{
-		pTmp = new ListNode(*(p + i) /* p[i] */);
+		pTmp = new ListNode(*(p + i) /* p[i] */);	
 		if (pHead == NULL)
 			pHead = pLast = pTmp;
 		else
@@ -50,7 +50,7 @@ void MyList::MakeList(int* p, int cnt)
 void MyList::Tisk() const
 {
 	// todo 1
-	ListNode* pTmp = pHead;
+	ListNode *pTmp = pHead;
 	while (pTmp != NULL)
 	{
 		printf("%d;", pTmp->value);
@@ -65,7 +65,7 @@ void MyList::Add(int value)
 	// -- prazdny seznam
 	// -- neprazdny seznam - vice prvku
 	// -- neprazdny seznam - jeden prvek
-	ListNode* pLast = pHead, * pItem;
+	ListNode *pLast = pHead, *pItem;
 
 	pItem = new ListNode(value);
 	//pItem->pNext = NULL;
@@ -100,7 +100,7 @@ bool MyList::Remove(int value)
 	// -- prvek s odstranovanou hodnotou neexistuje
 	ListNode* pPrev = NULL;  // inicializace kvuli prekladaci
 	ListNode* pItem = pHead;
-
+	
 	// hledej prvek
 	while (pItem != NULL && pItem->value != value)
 	{
@@ -151,7 +151,7 @@ bool MyList::Contains(int value)
 		*/
 }
 
-bool MyList::Contains(ListNode* pNode)
+bool MyList::Contains(ListNode *pNode)
 {
 	// todo 2b
 	ListNode* pItem = pHead;
@@ -160,22 +160,26 @@ bool MyList::Contains(ListNode* pNode)
 	while (pItem != NULL && pItem != pNode /* ! */)
 		pItem = pItem->pNext;
 
-	return pItem != NULL;
-	return false;
+	return pItem != NULL;	
 }
 
 bool MyList::Test_Begin(ListNode* pNode)
 {
-	return false;
+	return pHead == pNode;//return false;
 }
 
 bool MyList::Test_End(ListNode* pNode)
 {
-	return false;
+	ListNode* pTmp = pHead;
+	// najdi posledni prvek
+	while (pTmp->pNext != NULL)
+		pTmp = pTmp->pNext;
+	return pNode == pTmp;
 }
 
 int MyList::Pocet_Prvku()
 {
+	// todo1 du
 	return -1;
 }
 
@@ -186,7 +190,7 @@ void MyList::Tisk_Prvky_BezKrajnichHodnot()
 	;
 }
 
-void MyList::TiskReverse(ListNode* pItem)
+void MyList::TiskReverse(ListNode *pItem)
 {
 	// todo 6
 	if (pItem == NULL)
@@ -204,12 +208,13 @@ void MyList::TiskReverse()
 
 int MyList::SumaCisel()
 {
-	// todo du
+	// todo2 du
 	return 0;
 }
 
 int MyList::SumaCisel_BezKrajnichHodnot()
 {
+	// todo3 du
 	return 0;
 }
 
@@ -230,15 +235,10 @@ void MyList::AddSudeMultiple()
 
 void MyList::MoveMinHead()
 {
-	// todo du
+	// todo4 du
 }
 
 void MyList::MoveMaxTail()
 {
-	// todo du
-}
-
-int main()
-{
-	std::cout << "FIRST RUN \n";
+	// todo5 du
 }
