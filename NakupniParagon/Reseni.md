@@ -41,6 +41,10 @@ Třída `Produkt` je každá jednotlivá položka, jež může být přidána na
 ### Logická interpretace
 ### Fyzická interpretace
 ### Odůvodnění volby datové struktury a navrhovaných algoritmů
-Pro celkové řešení byla zvolena kombinace dvou datových struktur. V případě kategorií bylo zvoleno pole s předem definovanou velikostí. Víme, že kategorie produktů se neboudou často měnit a tím docílíme konstantního přístupu ke kategoriím. Pro jednotlivé produkty jsme zvolili obousměrný spojový seznam. Ten se jeví jako nejefektivnější struktura pro ukládání produktů. V našem případě totiž nevíme kolik produktů a jaké kategorie bude jednotlivý nákupní paragon obsahovat. Spojový seznam nám tedy umožní přidávat do každé kategorie libovolné množství produktů, aniž bychom museli předem definovat jeho velikost. Vkládání produktu bude vždy na konec seznamu. Volíme obousměrný spojový seznam, protože předpokládáme časté odebírání produktů a teké implementaci řadících algorytmů. Obousměrný spojový seznam je praktičtějčí pro výše uvedené operace. Obousměrný seznam sice zabere více paměti ale v připadě nákupního paragonu, kde se většinou jedná o desítky položek, je to zanedbatelné.
+Pro celkové řešení byla zvolena kombinace dvou datových struktur. V případě kategorií bylo zvoleno pole s předem definovanou velikostí. Víme, že kategorie produktů se neboudou často měnit a tím docílíme konstantního přístupu ke kategoriím.  
+
+Pro jednotlivé produkty jsme zvolili obousměrný spojový seznam. Ten se jeví jako nejefektivnější struktura pro ukládání produktů. V našem případě totiž nevíme kolik produktů a jaké kategorie bude jednotlivý nákupní paragon obsahovat.  
+
+Spojový seznam nám tedy umožní přidávat do každé kategorie libovolné množství produktů, aniž bychom museli předem definovat jeho velikost. Vkládání produktu bude vždy na konec seznamu. Volíme obousměrný spojový seznam, protože předpokládáme časté odebírání produktů a teké implementaci řadících algorytmů. Obousměrný spojový seznam je praktičtějčí pro výše uvedené operace. Obousměrný seznam sice zabere více paměti ale v připadě nákupního paragonu, kde se většinou jedná o desítky položek, je to zanedbatelné.
 ### Vyjádření složitosti
 ### Diskuze nad složitostí, výhodami a nevýhodami zvolených postupů
