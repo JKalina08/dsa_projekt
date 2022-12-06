@@ -115,7 +115,7 @@ public:
 
 
     // === SELECT SORT SESTUPNE =======================================
-    void sortKatgByAtrDesc(char atr) { // c - cena, n - nazev - TODO: Zatim funguje jen "c"
+    void sortKatgByAtrDesc() {
         
         Produkt* separator = nullptr;   // ukazuje na zacatek nesetrideny casti
         Produkt* ptr = nullptr;         // aktualne porovnavanz prvek
@@ -182,7 +182,7 @@ public:
     }
 
     // === SELECT SORT VZESTPNE =========================================================================
-    void sortKatgByAtrAsc(char atr){
+    void sortKatgByAtrAsc(){
         Produkt* separator = nullptr;   // ukazuje na zacatek nesetrideny casti
         Produkt* ptr = nullptr;         // aktualne porovnavanz prvek
         Produkt* max = nullptr;         // prozatimni nejmensi v aktualnim pruchodu nesetrizenou casti
@@ -292,5 +292,6 @@ public:
             }
         }
         cout << "CENA CELKEM = " << getSumCena() << endl;
+        cout << "==========================================================================" << endl;
     }
  };

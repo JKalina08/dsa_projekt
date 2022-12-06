@@ -171,19 +171,19 @@ void demo(Paragon prg) {
 	cout << endl;
 
 
-	cout << "Serazuji paragon po kategeoriich a nazvech sestupne a vypisuji ho" << endl;
-	prg.sortKatgByAtrDesc('c');
+	cout << "Serazuji paragon po kategeoriich podle ceny sestupne a vypisuji ho..." << endl;
+	prg.sortKatgByAtrDesc();
 
 	cout << "Vypis setrideneho paragonu podle ceny v kategoriich:" << endl;
 	prg.printParagon();
 	cout << endl;
 
-	cout << "Serazuji paragon po kategeoriich a cenach vzestupne a vypisuji ho" << endl;
-	prg.sortKatgByAtrAsc('c');
+	cout << "Serazuji paragon po kategeoriich a cenach vzestupne a vypisuji ho..." << endl;
+	prg.sortKatgByAtrAsc();
 	prg.printParagon();
 	cout << endl;
 
-	cout << "Odebírám několik položek (ze zacatku seznamu, z prostred i z konce)" << endl;
+	cout << "Odebírám několik položek (ze zacatku seznamu, z prostred i z konce seznamu)" << endl;
 	//zmenseni poctu kusu
 	prg.remProdukt("banan", 0.2, 4);	// jedinny prvek
 	prg.remProdukt("rajce", 0.2, 6);		// prvni prvek
@@ -230,11 +230,11 @@ int main()
 			break;
 
 		case 5:
-			prg->sortKatgByAtrAsc('c');
+			prg->sortKatgByAtrAsc();
 			break;
 
 		case 6:
-			prg->sortKatgByAtrAsc('c');
+			prg->sortKatgByAtrAsc();
 			break;
 
 		case 7:
