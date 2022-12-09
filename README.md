@@ -16,7 +16,7 @@
     - Diskuze nad složitostí, výhodami a nevýhodami zvolených postupů 
 
 ### Struktura dokumentu:
-- Ú vodní stránka
+- Úvodní stránka
 - Automaticky generovaný obsah; využití obrázků, tabulek, grafů a to podle charakteru zvoleného tématu.
 - Úvodní stránka a celý dokument bude zpracován v náležitostech bakalářské práce (viz informační systém školy/soubory ke stažení), ale bez stránek týkajících se bp – prohlášení, podepsané zadání s hlavičkou školy, atp.
 - Úvodní strana obsahuje
